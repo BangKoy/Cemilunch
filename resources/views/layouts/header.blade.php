@@ -41,7 +41,7 @@
                 <!--  Logo Area Start-->
                 <div class="col-md-2 col-sm-2">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo/logo-furniture.jpg" alt="" /></a>
+                        <a href="index.html"><img src="assets/images/logo/logo-electronic.jpg" alt="" /></a>
                     </div>
                 </div>
                 <!--  Logo Area end-->
