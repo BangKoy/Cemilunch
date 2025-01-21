@@ -29,8 +29,8 @@
                 <div class="col-md-12 text-center">
                     <!-- Section Title -->
                     <div class="section-title underline-shape">
-                        <h2>Featured Products</h2>
-                        <p>Add products to weekly line up</p>
+                        <h1>Menu Produk</h1>
+                        <p>Temukan makanan favorit kamu disini!</p>
                     </div>
                     <!-- Section Title -->
                 </div>
@@ -74,7 +74,7 @@
     </section>
     <!-- Feature Area End -->
     <!-- Brand area start -->
-    <div class="brand-area mb-100px">
+    {{-- <div class="brand-area mb-100px">
         <div class="container">
             <div class="border-1px">
                 <div class="brand-slider owl-carousel owl-nav-style owl-nav-style-2">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Brand area End -->
 @endsection
 

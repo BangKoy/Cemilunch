@@ -7,7 +7,7 @@
                 <!--Left Start-->
                 <div class="col-lg-4 col-md-4">
                     <div class="left-text">
-                        <p>Welcome you to Cemilunch store!</p>
+                        <p>Hai, Selamat datang di Cemilunch!</p>
                     </div>
                 </div>
                 <!--Left end-->
