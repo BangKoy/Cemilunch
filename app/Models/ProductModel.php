@@ -3,11 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use  Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class ProductModel extends Model
 {
-    //
     use HasFactory;
 
     // Menentukan nama tabel yang digunakan oleh model ini
@@ -18,5 +17,6 @@ class ProductModel extends Model
         'name',
         'stock',
         'price',
+        'description', // Added description field
     ];
 }

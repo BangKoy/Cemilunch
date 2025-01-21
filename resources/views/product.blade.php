@@ -7,7 +7,6 @@
 
 @section('content')
 
-
     <div>
         <meta name="csrf-token-cart" content="{{ csrf_token() }}">
         <!-- The whole future lies in uncertainty: live immediately. - Seneca -->
@@ -50,15 +49,8 @@
                                     <li class="old-price not-cut">Rp {{ number_format($product->price, 0, '.', '.') }}</li>
                                 </ul>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et
-                                dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco</p>
-                            <div class="pro-details-list">
-                                <ul>
-                                    <li>- 0.5 mm Dail</li>
-                                    <li>- Inspired vector icons</li>
-                                    <li>- Very modern style</li>
-                                </ul>
-                            </div>
+                            {!! $product->description !!}
+                            <br> <!-- Added product description -->
                             <div class="pro-details-quality mt-0px">
                                 <div class="cart-plus-minus">
                                     <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
@@ -75,7 +67,6 @@
         </section>
     </div>
 
-    {{-- <script src="{{ asset('/assets/js/getCartCount.js') }}"></script> --}}
     <script>
         const elementCart = document.querySelector('.addToCart');
         if (elementCart) {
@@ -112,6 +103,5 @@
 
         }
     </script>
-
 
 @endsection

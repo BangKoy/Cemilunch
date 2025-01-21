@@ -11,14 +11,13 @@
                     </div>
                     <!-- footer logo -->
                     <div class="about-footer">
-                        <p class="text-info">We are a team of designers and developers that create high quality HTML
-                            template</p>
+                        <p class="text-info">Kami menyediakan berbagai makanan khas daerah di Indonesia. Semua terjamin keaslian dan kualitasnya. Yuk, segera di pesan!</p>
                         <div class="need-help">
                             <p class="phone-info">
-                                NEED HELP?
+                                Butuh Bantuan? <br>
+                                Kontak kami di..
                                 <span>
-                                    (+800) 345 678 <br />
-                                    (+800) 123 456
+                                    (+62) 896 1595 7535 <br />
                                 </span>
                             </p>
                         </div>
