@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cemilunch</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon/favicon-cemilunch.png" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800&display=swap"
@@ -59,6 +59,7 @@
     <script src="{{ asset('/assets/js/plugins/slick.js') }}"></script>
     <script src="{{ asset('/assets/js/plugins/scrollup.js') }}"></script>
     <script src="{{ asset('/assets/js/plugins/range-script.js') }}"></script>
+
 
     @yield('js_page')
 
