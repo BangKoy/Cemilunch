@@ -51,7 +51,7 @@
                             </div>
                             {!! $product->description !!}
                             <br> <!-- Added product description -->
-                            <div class="pro-details-quality mt-0px">
+                            <div class="pro-details-quality mt-4">
                                 <div class="cart-plus-minus">
                                     <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
                                 </div>

@@ -1,56 +1,10 @@
 <header class="main-header home-2">
     <!-- Header top Area Start  -->
     <meta name="csrf-token-header" content="{{ csrf_token() }}">
-    <div class="header-top-nav">
-        <div class="container-fluid">
-            <div class="row">
-                <!--Left Start-->
-                <div class="col-lg-4 col-md-4">
-                    <div class="left-text">
-                        <p>Hai, Selamat datang di Cemilunch!</p>
-                    </div>
-                </div>
-                <!--Left end-->
-                <!--Right Start-->
-                <div class="col-lg-8 col-md-8 text-right">
-                    <div class="header-right-nav">
-                        <div class="dropdown-navs">
-                            <ul>
-                                <!-- Settings Start  -->
-                                @auth
-                                    <li class="dropdown after-n">
-                                        <a class="angle-icon" href="#">{{ auth()->user()->name }}</a>
-                                        <ul class="dropdown-nav">
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="/order-list">Transaksi</a></li>
-                                            @auth
-                                                <li>
-                                                    <form action="/logout" method="POST">
-                                                        @csrf
-                                                        <button type="submit" style="border: none"
-                                                            class="bg-transparent pt-2 pl-1">Logout</button>
-                                                    </form>
 
-                                                </li>
-                                            @else
-                                                <li><a href="/login">Login </a></li>
-                                            @endauth
-                                        </ul>
-                                    </li>
-                                @endauth
-
-                                <!-- Settings end  -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--Right end-->
-            </div>
-        </div>
-    </div>
     <!-- Header top Area end  -->
     <!-- Header Navigation Area Start  -->
-    <div class="header-navigation sticky-nav">
+    <div class="header-navigation sticky-nav menu_fixed">
         <div class="container-fluid">
             <div class="row">
                 <!--  Logo Area Start-->
@@ -61,12 +15,36 @@
                     </div>
                 </div>
                 <!--  Logo Area end-->
-                <div class="col-md-10 col-sm-10">
+                <div class="row justify-content-end col-md-10 col-sm-10">
                     <!--Main Navigation Start -->
                     <div class="main-navigation d-none d-lg-block">
                         <ul>
                             <li><a href="/">Home</a></li>
                             <li><a href="#">Contact Us</a></li>
+                            @auth
+                                <li class="nav-item dropdown" style="top: 0">
+                                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        {{ auth()->user()->name }}
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="font-weight-normal" href="/order-list">Transaksi</a></li>
+                                        @auth
+                                            <li>
+                                                <form action="/logout" method="POST">
+                                                    @csrf
+                                                    <button type="submit" style="border: none"
+                                                        class="bg-transparent pl-3">Logout</button>
+                                                </form>
+
+                                            </li>
+                                        @else
+                                            <li><a href="/login">Login </a></li>
+                                        @endauth
+                                    </ul>
+                                </li>
+                            @endauth
+
                         </ul>
                     </div>
                     <!--Main Navigation End -->
@@ -103,7 +81,11 @@
 </header>
 
 
+
 <script src="{{ asset('/assets/js/getCartCount.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
