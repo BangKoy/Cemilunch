@@ -33,7 +33,7 @@
                             </div>
                         @endforeach
                         <div class="detail-order-wrapper">
-                            <a href="#" class="invoice-order-btn">Lihat Invoice</a>
+                            <a href="/invoice/{{ $order['order_id'] }}" class="invoice-order-btn">Lihat Invoice</a>
                             <p class="total-price-order">Total Belanja Rp
                                 {{ number_format($order['total_price'], 0, '.', '.') }}</p>
                         </div>
