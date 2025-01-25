@@ -6,19 +6,19 @@
 @endsection
 
 @section('content')
-    <div class="slider-area">
+    <div class="slider-area" style="margin-top: 84px">
         <div class="slider-active-3 owl-carousel slider-hm8 owl-dot-style">
             <!-- Slider Single Item Start -->
             <div class="slider-height-6 d-flex align-items-start justify-content-start bg-img"
-                style="background-image: url(/assets/images/banner-image/1.jpg);background-position: left center;">
+                style="background-image: url(/assets/images/banner-image/1.jpg);">
             </div>
             <!-- Slider Single Item End -->
             <!-- Slider Single Item Start -->
             <div class="slider-height-6 d-flex align-items-start justify-content-start bg-img"
-                style="background-image: url(/assets/images/banner-image/2.jpg);background-position: left center;   ">
+                style="background-image: url(/assets/images/banner-image/2.jpg);">
             </div>
             <div class="slider-height-6 d-flex align-items-start justify-content-start bg-img"
-                style="background-image: url(/assets/images/banner-image/3.jpg);background-position: left center;   ">
+                style="background-image: url(/assets/images/banner-image/3.jpg);">
             </div>
             <!-- Slider Single Item End -->
         </div>
