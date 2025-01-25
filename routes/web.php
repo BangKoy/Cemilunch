@@ -31,4 +31,4 @@ Route::post('/checkout', [OrderController::class, 'store'])->middleware('auth')-
 
 Route::get('/order-list', [OrderController::class, 'history'])->middleware('auth')->name('checkoutHistory');
 
-Route::get('/invoice', [InvoiceController::class, 'show'])->middleware('auth')->name('invoice');
+Route::get('/invoice/{id}', [InvoiceController::class, 'show'])->middleware('auth')->name('invoice');
